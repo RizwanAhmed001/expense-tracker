@@ -2,8 +2,10 @@ import cookieParser from "cookie-parser";
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import connectDB from "./config/mongoDB.js";
 
 dotenv.config();
+connectDB();
 
 const app = express();
 
